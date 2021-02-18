@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  NAME:string="gyanendra Dubey"
+  heite:number=10;
 }
