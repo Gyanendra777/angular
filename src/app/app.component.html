@@ -1,6 +1,6 @@
 
 <h1>{{title}}</h1>
 <h1>useing ng For</h1>
-<ul *ngFor="let p of student">
-  <li>{{p.name}}</li>
+<ul *ngFor="let p of student; let i=index">
+  <li> {{i+1}} - {{p.name}}</li>
 </ul>
