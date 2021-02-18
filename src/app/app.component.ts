@@ -7,4 +7,34 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  contrydetale:any[]=[
+    {
+      'contry':'india',
+      'pepole':[
+        {
+          'name':'raju'
+        },
+        {
+          'name':'raju dubey'
+        },
+        {
+          'name':'raju panday'
+        },
+      ]
+    },
+    {
+      'contry':'uk',
+      'pepole':[
+        {
+          'name':'mikle'
+        },
+        {
+          'name':'ray'
+        },
+        {
+          'name':'raay'
+        },
+      ]
+    }
+  ]
 }
