@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponyModule } from './compony/compony.module';
+import { MyservesService } from './myserves.service';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,12 @@ import { ComponyModule } from './compony/compony.module';
     AppRoutingModule,
     ComponyModule
   ],
-  providers: [],
+  providers: [MyservesService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){
+    
+    console.log("hi this is a module .....")
+  }
+}
