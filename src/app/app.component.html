@@ -1,8 +1,18 @@
 
-<h1>hello app component</h1>
-<!-- DIRECTIVES component directives...... -->
-<button (click)="clickme()">click</button> 
-<!-- DIRECTIVES structural directives...... -->
-<h1 *ngIf="h">hello worde varival ngIf compone to </h1>
-<!-- DIRECTIVES attribute directives...... -->
-<h1 [ngStyle]="{'color':'red'}">hello worde varival ngIf compone to </h1>
+<h1>{{title}}</h1>
+<h1>useing ng Switch</h1>
+
+<select (change)="setvalue($event)">
+  <option value="">--select--</option>
+  <option value="one">one</option>
+  <option value="two">two</option>
+  <option value="three">three</option>
+  <option value="another">another</option>
+</select>
+<div [ngSwitch]="choose">
+  <h3 *ngSwitchCase="'one'">first</h3>
+  <h3 *ngSwitchCase="'two'">second</h3>
+  <h3 *ngSwitchCase="'three'">third</h3>
+  <h3 *ngSwitchDefault="'Default'">Default</h3>
+
+</div>

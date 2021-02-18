@@ -10,19 +10,18 @@ import { MyservesService } from './myserves.service';
 })
 export class AppComponent {
   title = 'angular';
-  h=true;
- clickme() {
-    alert('welcome to component')
+  public choose="";
+  setvalue(dry:any){
+    this.choose = dry.target.value
   }
+  
   constructor(myservesService:MyservesService){
-    // var  c=myservesService.clickF()
     console.log(myservesService)
   }
-  // clickme(...args: [: any] | [: any]);
   
 
-  @HostListener('click')
-  onk(event:Event){
-    alert('hello hostlistener')
-  }
+  // @HostListener('click')
+  // // onk(event:Event){
+  // //   alert('hello hostlistener')
+  // }
 }
