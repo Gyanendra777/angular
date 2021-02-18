@@ -7,4 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  users=[
+'anuge',
+'mouth',
+'rakes',
+'raju'
+  ];
+
+  getcssClass(flag:string){
+    let cssClass;
+    if (flag=="mode") {
+      cssClass={
+        'one':true,
+        'two':true
+          }
+    } else {
+      cssClass={
+        'one':false,
+        'two':true
+      }
+    }
+  }
+
+
+
+
+constructor(){}
 }
