@@ -10,10 +10,16 @@ import { MyservesService } from './myserves.service';
 })
 export class AppComponent {
   title = 'angular';
-  public choose="";
-  setvalue(dry:any){
-    this.choose = dry.target.value
-  }
+  student : any[]=[
+    {'name':'raju'},
+    {'name':'raju dubey'},
+    {'name':'raju panday'},
+    {'name':'raju tivari'},
+    {'name':'raju miscra'},
+    {'name':'raju upadya'},
+    {'name':'raju shing'},
+  ]
+ 
   
   constructor(myservesService:MyservesService){
     console.log(myservesService)
