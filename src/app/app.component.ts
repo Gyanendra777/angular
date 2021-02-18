@@ -10,19 +10,83 @@ import { MyservesService } from './myserves.service';
 })
 export class AppComponent {
   title = 'angular';
-  student : any[]=[
-    {'name':'raju'},
-    {'name':'raju dubey'},
-    {'name':'raju panday'},
-    {'name':'raju tivari'},
-    {'name':'raju miscra'},
-    {'name':'raju upadya'},
-    {'name':'raju shing'},
-  ]
+  student:any[];
  
   
-  constructor(myservesService:MyservesService){
-    console.log(myservesService)
+  constructor(){
+    this.student=[
+      {
+        studentid:1,
+        name:'raju',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:2,
+        name:'raju dubey',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:3,
+        name:'raju panday',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:4,
+        name:'raju shing',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+    ]
+  }
+  getmorestudent():void{
+    this.student= [
+      {
+        studentid:1,
+        name:'raju',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:2,
+        name:'raju dubey',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:3,
+        name:'raju panday',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:4,
+        name:'raju shing',
+        age:23,
+        gender:"male",
+        coarse:'m.com'
+      },
+      {
+        studentid:5,
+        name:'shikha',
+        age:23,
+        gender:"female",
+        coarse:'m.com'
+      },
+    ]
+
+  }
+  trakbystudentbyid(index:number,student:any):string{
+    return student.studentid
   }
   
 

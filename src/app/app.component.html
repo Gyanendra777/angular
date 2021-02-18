@@ -1,6 +1,15 @@
+<h3>angular 11 fulll corase in project creat<a href="https://youtu.be/lFdkArKolss">link</a></h3>
 
-<h1>{{title}}</h1>
-<h1>useing ng For</h1>
-<ul *ngFor="let p of student; let i=index ;let f=first;let l=last;let od=odd;let ev=even">
-  <li> {{i+1}} - {{p.name}} - {{f}} - {{l}} - {{od}} - {{ev}}</li>
-</ul>
+<h1>trike by exmapl</h1>
+<table border="1">
+  <tr *ngFor='let p of student;trackBy:trakbystudentbyid '>
+<th>{{p.studentid}}</th>
+<th>{{p.name}}</th>
+<th>{{p.age}}</th>
+<th>{{p.gender}}</th>
+<th>{{p.coarse}}</th>
+  </tr>
+</table>
+<hr>
+<br>
+<button (click)="getmorestudent()">click me add student</button>
