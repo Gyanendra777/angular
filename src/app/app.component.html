@@ -1,6 +1,6 @@
 
 <h1>{{title}}</h1>
 <h1>useing ng For</h1>
-<ul *ngFor="let p of student; let i=index">
-  <li> {{i+1}} - {{p.name}}</li>
+<ul *ngFor="let p of student; let i=index ;let f=first;let l=last;let od=odd;let ev=even">
+  <li> {{i+1}} - {{p.name}} - {{f}} - {{l}} - {{od}} - {{ev}}</li>
 </ul>
