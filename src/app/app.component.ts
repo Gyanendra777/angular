@@ -7,35 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
-  contrydetale:any[]=[
-    {
-      'contry':'Component to view',
-      'pepole':[
-        {
-          'name':'Interpolation Binding'
-        },
-        {
-          'name':'property Binding'
-        },
-        {
-          'name':'style Binding'
-        },
-        {
-          'name':'class Binding'
-        },
-        {
-          'name':'attribute Binding'
-        },
-      ]
-    },
-    {
-      'contry':'View to Component',
-      'pepole':[
-        {
-          'name':'Event binding'
-        }
-       
-      ]
-    }
-  ]
+  name = 'gyanendra dubey';
+  a:number=2;
+  b:number=4;
+ 
 }
