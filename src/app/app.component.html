@@ -12,17 +12,20 @@
       <form #regForm="ngForm" (ngSubmit)="Register(regForm)">
         <h2 class="text-center ">registration page </h2><br>
         <div class="form-group">
-          <input type="text" name="first name"placeholder="first name" id="" class="form-control" ngModel>
+          <input type="text" name="first name"placeholder="first name" id="" class="form-control" required ngModel #first="ngModel">
+          <span class="help-bpx"*ngIf="first.touched && !first.valid" >please enter emale value </span>
         </div>
         <div class="form-group">
-          <input type="text" name="last name"placeholder="last name" id="" class="form-control" ngModel>
+          <input type="text" name="last name"placeholder="last name" id="" class="form-control"required ngModel  #last="ngModel">
+          <span class="help-bpx"*ngIf="last.touched && !last.valid" >please enter last name </span>
         </div>
         <div class="form-group">
-          <input type="email" name="emale"placeholder="emale" id="" class="form-control" ngModel>
+          <input type="email" name="emale"placeholder="emale" id="" class="form-control"required ngModel #emale="ngModel" >
+          <span class="help-bpx"*ngIf="emale.touched && !emale.valid" >please enter emale value </span>
         </div>
         <br>
         <div class="align-center">
-          <button type="submit" class="btn btn-primary"id="Register">Register</button>
+          <button type="submit" class="btn btn-primary"id="Register" [disabled]="!regForm.valid">Register</button>
         </div>
 
 
