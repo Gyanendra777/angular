@@ -5,10 +5,10 @@ import { StudentComponent } from './student/student.component';
 import { StudentdetailComponent } from './studentdetail/studentdetail.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'page1',pathMatch:'full'},
+  // {path:'',redirectTo:'page1',pathMatch:'full'},
   {path:'page1' ,component : StudentComponent},
   {path:'page2' ,component : StudentdetailComponent},
-  {path:'**' ,component : PagenotfoundComponent},
+  // {path:'**' ,component : PagenotfoundComponent},
 ];
 
 @NgModule({

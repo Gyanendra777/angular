@@ -8,10 +8,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular';
-  constructor(private router:Router){}
-    page(){
-      this.router.navigate(['/page1'])
-    }
+  constructor(){}
+  Register(regForm:any){
+    // debugger
+    var fistname=regForm.controls["first name"].value
+    
+    console.log(regForm);
+    document.write(fistname)
+  }
+  
+   
 
   
 }

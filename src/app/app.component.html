@@ -3,9 +3,42 @@
 <!-- <h3>angular 11 redirectiong ROUTING<a href="https://youtu.be/Y0koZgnm9UY">link</a></h3><hr> -->
 
 
-<h1>anguler bootstrap cli creat </h1>
+<h1>anguler forme cli creat </h1>
+<hr>
+ <h1>1---   template-driven form</h1>
+<div class="container">
+  <div class="row">
+    <div class="form-bg">
+      <form #regForm="ngForm" (ngSubmit)="Register(regForm)">
+        <h2 class="text-center ">registration page </h2><br>
+        <div class="form-group">
+          <input type="text" name="first name"placeholder="first name" id="" class="form-control" ngModel>
+        </div>
+        <div class="form-group">
+          <input type="text" name="last name"placeholder="last name" id="" class="form-control" ngModel>
+        </div>
+        <div class="form-group">
+          <input type="email" name="emale"placeholder="emale" id="" class="form-control" ngModel>
+        </div>
+        <br>
+        <div class="align-center">
+          <button type="submit" class="btn btn-primary"id="Register">Register</button>
+        </div>
 
-<h1>ng add @ng-bootstrap/ng-bootstrap </h1>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- <h1>{{fistname}}</h1> -->
+
+<hr>
+<h1>2--------   model-driven form  ()</h1>
+
+
 
 
 
