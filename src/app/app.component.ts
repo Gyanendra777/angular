@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  emply:any=[
+    {'id':23,'name':'gyaendra dubey','salary':235346, 'gender':'male'},
+    {'id':23,'name':'gyaendra dubey','salary':235346, 'gender':'male'},
+    {'id':23,'name':'gyaendra dubey','salary':235346, 'gender':'male'},
+    {'id':23,'name':'gyaendra dubey','salary':235346, 'gender':'female'},
+  ]
 }
