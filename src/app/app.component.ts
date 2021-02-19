@@ -14,8 +14,13 @@ export class AppComponent {
     var fistname=regForm.controls["first name"].value
     
     console.log(regForm);
-    document.write(fistname)
+    console.log(fistname);
+    // document.write(fistname)
   }
+  // reset(regForm:any){
+  //   var a = new regForm.reset();
+
+  // }
   
    
 
