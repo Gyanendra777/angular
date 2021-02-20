@@ -1,2 +1,32 @@
+<h3>angular 11 fulll corase in project creat<a href="https://youtu.be/kRxfz5Shir4">link</a></h3>
+<h3>angular material</h3>
+<mat-toolbar color="accent">Simple card</mat-toolbar>
 
-<h3>angular 11 fulll corase in project creat<a href="https://www.youtube.com/watch?v=m1F7Tlm0-cY&list=PL_qizAfcpJ-PQsBV9ZWDQKXmwsJSJP3dJ">link</a></h3>
+<!-- material -->
+<mat-card>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Favorite food</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="" />
+        </mat-form-field>
+    <!-- </form>
+    <form > -->
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Option 1</mat-radio-button>
+            <mat-radio-button value="2">Option 2</mat-radio-button>
+        </mat-radio-group>
+    <!-- </form>
+    <form> -->
+        <h4>native html select</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Favorite car</mat-label>
+            <select matNativeControl [(ngModel)]="sele" name="car">
+                <option value="" selected></option>
+                <option *ngFor="let car of cars" [value]="car.value">
+                    {{car.viewValue}}
+                </option>
+            </select>
+        </mat-form-field>
+        <p>Selected car: {{sele}}</p>
+    </form>
+</mat-card>
